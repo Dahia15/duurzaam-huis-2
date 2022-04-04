@@ -11,7 +11,7 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695CFE;
+    --primary-color: #1A374D;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
@@ -27,6 +27,12 @@ body{
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 ::selection{
@@ -171,6 +177,7 @@ body.dark .sidebar header .toggle{
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
+                                    
 }
 
 .sidebar input{
