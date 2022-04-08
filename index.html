@@ -13,9 +13,11 @@
     <script src="js/bewegingsens.js" defer></script>
     <script src="js/buitentemp.js" defer></script>
     <script src="js/zonsopgang.js" defer></script>
-    <script src="thermo.js" defer></script>
-    <script src="lichtint.js" defer></script>
-    <script src="gas.js" defer></script>
+    <script src="js/thermo.js" defer></script>
+    <script src="js/lichtint.js" defer></script>
+    <script src="js/gas.js" defer></script>
+    <script src="js/zons.json" defer></script>
+    <script src="js/weer.json" defer></script>
     <title>Dashboard</title> 
 </head>
 <body>
@@ -85,11 +87,11 @@
     <ul class="cards">
         <li class="card card--first left">
             <h3 id="js--name">Water Vebruik</h3>
-            <canvas id="Water_Chart"></canvas>
+            <canvas id="js--water_chart"></canvas>
         </li>
         <li class="card card--second">
-            <h2 id="js--name2" class="title">Buitentemperatuur</h2>
-            <div id="dataDiv"></div>
+            <h2 id="js--name2" class="title temptext">Binnentemperatuur</h2>
+            <div id="dataDiv" class="temptext"></div>
             <p id="js--input2" class="text1"></p>
         </li>
         <li class="card card--third ">
@@ -105,6 +107,7 @@
         <li class="card card--fifth">
             <h2 id="js--name2" class="title"></h2>
             <p id="js--input2" class="text1"></p>
+            <h2 id="js--text">zonsopgang & ondergang</h2>
         </li>
         <li class="card card--sixth">
             <h2 id="js--name2" class="title"></h2>

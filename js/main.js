@@ -98,7 +98,7 @@ function preventScroll(e){
 
 var KWH = [11, 15, 13, 9, 15, 17, 10 ];
 var week = ['week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7'];
-var cntxt = document.getElementById('Water_Chart');
+var cntxt = document.getElementById('js--water_chart');
 
 var myChart = new Chart(cntxt, {
     type: 'pie',

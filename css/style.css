@@ -29,12 +29,6 @@ body{
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
     font-family: sans-serif;
     background: linear-gradient(27.5deg,#1A374D 50%, #406882 50%);
     padding: 4rem;
@@ -67,6 +61,12 @@ body.dark{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 1;  
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 .sidebar.close{
     width: 88px;
@@ -272,6 +272,15 @@ body.dark .sidebar li a:hover .text{
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+}
+
+.temptext{
+    font-size:x-large;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .card--first > input{
