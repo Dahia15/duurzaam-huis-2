@@ -28,7 +28,7 @@ const updatetime = function(){
 
     }
     if(uitgeklapt === false){
-        document.getElementById('js--timeanddate').innerHTML = n + ' ' + time;
+        document.getElementById('js--timeanddate').innerHTML = n + ' ';
     }
 
     setTimeout(updatetime, 1)
