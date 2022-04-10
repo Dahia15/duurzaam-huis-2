@@ -31,7 +31,7 @@ const updatetime = function(){
         document.getElementById('js--timeanddate').innerHTML = n + ' ';
     }
 
-    setTimeout(updatetime, 1)
+    setTimeout(updatetime, 50)
 
 }
 
