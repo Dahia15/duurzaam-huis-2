@@ -67,6 +67,7 @@ body.dark{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    z-index: 1;
 }
 .sidebar.close{
     width: 88px;
@@ -390,7 +391,6 @@ body.dark .sidebar li a:hover .text{
 
 
 #dashboard {
-    display              : grid;
     position             : relative;
     display              : grid;
     grid-gap             : 1.875rem;
@@ -413,9 +413,12 @@ body.dark .sidebar li a:hover .text{
 .M-weer{
     padding-bottom: 27rem;
 }
+
 #weather {
-    display: block;
-    position:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 20vw;
         
 }

@@ -71,10 +71,11 @@ async function renderData() {
      let datum =  new Date(measurement.datum);
    
      // De meting gegevens wegschrijven naar de div                
-     dataDiv.innerHTML = `<p>Sensor: ${measurement.sensor} 
-        </p><p>Temperature: ${measurement.value1}
-        </p><p> Humidity: ${measurement.value2}
-        </p><p> Heatindex: ${measurement.value3}</p>`;
+     dataDiv.innerHTML = `
+        <p>Sensor: ${measurement.sensor} </p>
+        <p>Temperature: ${measurement.value1}</p>
+        <p> Humidity: ${measurement.value2}</p>
+        <p> Heatindex: ${measurement.value3}</p>`;
 }
 
 renderData(); // start immediately
