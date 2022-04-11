@@ -32,7 +32,7 @@ body{
     font-family: sans-serif;
     background: linear-gradient(27.5deg,#1A374D 50%, #406882 50%);
     padding: 4rem;
-    padding-left: 9.375rem;
+    padding-left: 150px;
 }
 
 
@@ -57,8 +57,8 @@ body.dark{
     top: 0;
     left: 0;
     height: 100%;
-    width: 15.625rem;
-    padding: 0.625rem 0.875rem;
+    width: 250px;
+    padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05); 
     -webkit-touch-callout: none; 
@@ -69,31 +69,31 @@ body.dark{
     user-select: none;
 }
 .sidebar.close{
-    width: 5.5rem;
+    width: 88px;
 }
 
 .sidebar li{
-    height: 3.125rem;
+    height: 50px;
     list-style: none;
     display: flex;
     align-items: center;
-    margin-top: 0.625rem;
+    margin-top: 10px;
 }
 
 .sidebar header .image,
 .sidebar .icon{
-    min-width: 3.75rem;
-    border-radius: 0.375rem;
+    min-width: 60px;
+    border-radius: 6px;
 }
 
 .sidebar .icon{
-    min-width: 3.75rem;
-    border-radius: 0.375rem;
+    min-width: 60px;
+    border-radius: 6px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .sidebar .text,
@@ -103,7 +103,7 @@ body.dark{
 }
 
 .sidebar .text{
-    font-size: 1.0625rem;
+    font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
@@ -126,14 +126,14 @@ body.dark{
     flex-direction: column;
 }
 header .image-text .name {
-    margin-top: 0.125rem;
-    font-size: 1.125rem;
+    margin-top: 2px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 header .image-text .profession{
-    font-size: 1rem;
-    margin-top: -0.125rem;
+    font-size: 16px;
+    margin-top: -2px;
     display: block;
 }
 
@@ -144,24 +144,24 @@ header .image-text .profession{
 }
 
 .sidebar header .image img{
-    width: 2.5rem;
-    border-radius: 0.375rem;
+    width: 40px;
+    border-radius: 6px;
 }
 
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
-    right: -1.5625rem;
+    right: -25px;
     transform: translateY(-50%) rotate(180deg);
-    height: 1.5625rem;
-    width: 1.5625rem;
+    height: 25px;
+    width: 25px;
     background-color: var(--primary-color);
     color: var(--sidebar-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.375rem;
+    font-size: 22px;
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -175,11 +175,11 @@ body.dark .sidebar header .toggle{
 }
 
 .sidebar .menu{
-    margin-top: 2.5rem;
+    margin-top: 40px;
 }
 
 .sidebar{
-    border-radius: 0.375rem;
+    border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
@@ -193,8 +193,8 @@ body.dark .sidebar header .toggle{
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
-    border-radius: 0.375rem;
-    font-size: 1.0625rem;
+    border-radius: 6px;
+    font-size: 17px;
     font-weight: 500;
     transition: var(--tran-05);
 }
@@ -206,7 +206,7 @@ body.dark .sidebar header .toggle{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 0.375rem;
+    border-radius: 6px;
     text-decoration: none;
     transition: var(--tran-03);
 }
@@ -224,7 +224,7 @@ body.dark .sidebar li a:hover .text{
 }
 
 .sidebar .menu-bar{
-    height: calc(100% - 3.4375rem);
+    height: calc(100% - 55px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -234,7 +234,7 @@ body.dark .sidebar li a:hover .text{
     display: none;
 }
 .sidebar .menu-bar .mode{
-    border-radius: 0.375rem;
+    border-radius: 6px;
     background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
@@ -273,7 +273,7 @@ body.dark .sidebar li a:hover .text{
     grid-column: 1 / 7;
     grid-row:1 / 5 ;
     padding: 4rem;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -296,6 +296,7 @@ body.dark .sidebar li a:hover .text{
 .card--second{
     grid-column: 7 / 13;
     grid-row: 1 / 5;
+    display: none;
 }
 
 .title{
@@ -308,8 +309,8 @@ body.dark .sidebar li a:hover .text{
 }
 
 .card--third{
-    grid-column: 13 / 19;
-    grid-row: 1 / 5;
+    grid-column: 1 / 7;
+    grid-row:1 / 5 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,8 +336,8 @@ body.dark .sidebar li a:hover .text{
 }
 
 .card--forth{
-    grid-column: 1 / 7;
-    grid-row: 5 / 9;
+    grid-column: 7 / 13;
+    grid-row: 1 / 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,8 +346,8 @@ body.dark .sidebar li a:hover .text{
 }
 
 .card--fifth{
-    grid-column: 7 / 13;
-    grid-row: 5 / 9;
+    grid-column: 13 / 19;
+    grid-row: 1 / 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,7 +358,7 @@ body.dark .sidebar li a:hover .text{
 .card--sixth{
     grid-column: 13 / 19;
     grid-row: 5 / 9;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -368,7 +369,7 @@ body.dark .sidebar li a:hover .text{
 .card--seventh{
     grid-column: 1 / 7;
     grid-row: 9 / 13;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -380,7 +381,7 @@ body.dark .sidebar li a:hover .text{
 .card--eight{
     grid-column: 7 / 19;
     grid-row: 9 / 13;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -403,9 +404,9 @@ body.dark .sidebar li a:hover .text{
     background   : #ffffff;
     padding      : 1.25rem;
     min-height   : 18.75rem;
-    border-radius: 0.625rem;
-    box-shadow   : 0.125rem 1.1875rem 0.3125rem #bbbbbb;
-    border       : 0.0625rem solid #4c8aff;
+    border-radius: 10px;
+    box-shadow   : 2px 3px 5px #bbbbbb;
+    border       : 1px solid #4c8aff;
     width        : 175%;
 }
 
@@ -429,9 +430,9 @@ body.dark .sidebar li a:hover .text{
 
 select {
     display      : block;
-    margin-bottom: 0.625rem;
-    padding      : 0.3125rem;
-    font-size    : 1rem;
+    margin-bottom: 10px;
+    padding      : 5px;
+    font-size    : 16px;
 }
 
 @media screen and (max-width: 87.5rem) {
@@ -455,7 +456,8 @@ select {
     }
 
     .card--third {
-        
+        grid-area: auto;
+        grid-row: inherit;
         
     }
 }
