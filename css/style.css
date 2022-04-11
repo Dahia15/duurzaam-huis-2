@@ -32,7 +32,7 @@ body{
     font-family: sans-serif;
     background: linear-gradient(27.5deg,#1A374D 50%, #406882 50%);
     padding: 4rem;
-    padding-left: 150px;
+    padding-left: 9.375rem;
 }
 
 
@@ -57,8 +57,8 @@ body.dark{
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
-    padding: 10px 14px;
+    width: 15.625rem;
+    padding: 0.625rem 0.875rem;
     background: var(--sidebar-color);
     transition: var(--tran-05); 
     -webkit-touch-callout: none; 
@@ -69,31 +69,31 @@ body.dark{
     user-select: none;
 }
 .sidebar.close{
-    width: 88px;
+    width: 5.5rem;
 }
 
 .sidebar li{
-    height: 50px;
+    height: 3.125rem;
     list-style: none;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .sidebar header .image,
 .sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
+    min-width: 3.75rem;
+    border-radius: 0.375rem;
 }
 
 .sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
+    min-width: 3.75rem;
+    border-radius: 0.375rem;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .sidebar .text,
@@ -103,7 +103,7 @@ body.dark{
 }
 
 .sidebar .text{
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
@@ -126,14 +126,14 @@ body.dark{
     flex-direction: column;
 }
 header .image-text .name {
-    margin-top: 2px;
-    font-size: 18px;
+    margin-top: 0.125rem;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
 header .image-text .profession{
-    font-size: 16px;
-    margin-top: -2px;
+    font-size: 1rem;
+    margin-top: -0.125rem;
     display: block;
 }
 
@@ -144,24 +144,24 @@ header .image-text .profession{
 }
 
 .sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
+    width: 2.5rem;
+    border-radius: 0.375rem;
 }
 
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
-    right: -25px;
+    right: -1.5625rem;
     transform: translateY(-50%) rotate(180deg);
-    height: 25px;
-    width: 25px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     background-color: var(--primary-color);
     color: var(--sidebar-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 1.375rem;
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -175,11 +175,11 @@ body.dark .sidebar header .toggle{
 }
 
 .sidebar .menu{
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .sidebar{
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
@@ -193,8 +193,8 @@ body.dark .sidebar header .toggle{
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
+    border-radius: 0.375rem;
+    font-size: 1.0625rem;
     font-weight: 500;
     transition: var(--tran-05);
 }
@@ -206,7 +206,7 @@ body.dark .sidebar header .toggle{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     text-decoration: none;
     transition: var(--tran-03);
 }
@@ -224,7 +224,7 @@ body.dark .sidebar li a:hover .text{
 }
 
 .sidebar .menu-bar{
-    height: calc(100% - 55px);
+    height: calc(100% - 3.4375rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -234,7 +234,7 @@ body.dark .sidebar li a:hover .text{
     display: none;
 }
 .sidebar .menu-bar .mode{
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
@@ -403,9 +403,9 @@ body.dark .sidebar li a:hover .text{
     background   : #ffffff;
     padding      : 1.25rem;
     min-height   : 18.75rem;
-    border-radius: 10px;
-    box-shadow   : 2px 3px 5px #bbbbbb;
-    border       : 1px solid #4c8aff;
+    border-radius: 0.625rem;
+    box-shadow   : 0.125rem 1.1875rem 0.3125rem #bbbbbb;
+    border       : 0.0625rem solid #4c8aff;
     width        : 175%;
 }
 
@@ -429,9 +429,9 @@ body.dark .sidebar li a:hover .text{
 
 select {
     display      : block;
-    margin-bottom: 10px;
-    padding      : 5px;
-    font-size    : 16px;
+    margin-bottom: 0.625rem;
+    padding      : 0.3125rem;
+    font-size    : 1rem;
 }
 
 @media screen and (max-width: 87.5rem) {

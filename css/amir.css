@@ -296,6 +296,7 @@ body.dark .sidebar li a:hover .text{
 .card--second{
     grid-column: 7 / 13;
     grid-row: 1 / 5;
+    display: none;
 }
 
 .title{
