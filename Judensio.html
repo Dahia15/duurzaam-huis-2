@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" defer ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/water.js" defer></script>
+    <script src="js/bewegingsens.js" defer></script>
+    <script src="js/buitentemp.js" defer></script>
+    <script src="js/zonsopgang.js" defer></script>
+    <script src="js/thermo.js" defer></script>
+    <script src="js/lichtint.js" defer></script>
+    <script src="js/gas.js" defer></script>
+    <script src="js/zons.json" defer></script>
+    <script src="js/weer.json" defer></script>
+    <script src="js/lichtint.js" defer></script>
+
+    <title>Dashboard</title> 
+</head>
+<body>
+    <nav id="sidebar" class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/duurzaamlogo.png" href="index.html" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Duurzaam Huis</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Dion.html">
+                            <i class='bx bxs-user icon' ></i>
+                            <span class="text nav-text">Dion</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="Amir.html">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Amir</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Judensio.html">
+                            <i class='bx bxs-user icon' ></i>
+                            <span class="text nav-text">Judensio</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+                <li class="mode">
+                    <span id="js--timeanddate" class="mode-text"></span>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+        <li class="card card--third ">
+            <h2 id="js--name3">Gas verbruik</h2> 
+            <canvas id="js--gas_chart"></canvas>  
+        </li>
+
+
+ 
+        <li class="card card--forth">
+            <canvas id="myChart3"></canvas>
+            <h2 id="js--text"></h2>
+            
+        </li>
+
+        <li class="card card--fifth">
+            <h2 id="js--name2" class="title"></h2>
+            <p id="js--input2" class="text1"></p>
+            <h2 id="js--text">zonsopgang & ondergang</h2>
+            <article id="sunrise" class="Zonsondergang">
+                <p id='location1'></p>
+                <p id='weather1'></p>
+                <p id="weather1"> ☀️ Zonsopgang:</p>
+                <p id='temp1'></p>
+                <p id='sunrise1'></p>
+                <p id="weather1">🌙 Zonsondergang:</p>
+                </article>
+
+        </li>
+       
+
+        <li class="card card--eight">
+            <h2>gereserveerd voor vmbo</h2>
+        </li>
+    </ul>
+</body>
+</html>
