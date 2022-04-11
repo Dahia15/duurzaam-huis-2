@@ -454,8 +454,7 @@ select {
     }
 
     .card--third {
-        grid-area: auto;
-        grid-row: inherit;
+        
         
     }
 }
