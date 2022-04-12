@@ -404,7 +404,6 @@ body.dark .sidebar li a:hover .text{
     padding      : 1.25rem;
     min-height   : 18.75rem;
     border-radius: 0.625rem;
-    box-shadow   : 0.125rem 1.1875rem 0.3125rem #bbbbbb;
     border       : 0.0625rem solid #4c8aff;
     width        : 175%;
 }
