@@ -410,9 +410,6 @@ body.dark .sidebar li a:hover .text{
     width        : 175%;
 }
 
-.M-weer{
-    padding-bottom: 27rem;
-}
 
 #weather {
     display: flex;
@@ -438,29 +435,20 @@ select {
     font-size    : 16px;
 }
 
-@media screen and (max-width: 87.5rem) {
-
-    .card--second{
-        
-    }
-    
-    .card--third{
-       
-    }
-}
-
 @media screen and (max-width: 80rem) {
     body{
         background: #406882;
     }
 
-    .card--first, .card--second{
-        grid-area: auto;
+    .card--first, .card--second, .card--third, .card--forth, .card--fifth, .card--sixth, .card--seventh, .card--eight {
+        grid-column: 1 / 19;
+        grid-row: auto;
+    
+    }
+    
+    #weather{
+        width: 30rem;
     }
 
-    .card--third {
-        grid-area: auto;
-        grid-row: inherit;
-        
-    }
+
 }
