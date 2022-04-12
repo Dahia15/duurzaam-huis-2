@@ -71,10 +71,11 @@ async function renderData() {
      let datum =  new Date(measurement.datum);
    
      // De meting gegevens wegschrijven naar de div                
-     dataDiv.innerHTML = `<p>Sensor: ${measurement.sensor} 
-        </p><p>Temperature: ${measurement.value1}
-        </p><p> Humidity: ${measurement.value2}
-        </p><p> Heatindex: ${measurement.value3}</p>`;
+     dataDiv.innerHTML = `
+        <p>Sensor: ${measurement.sensor} </p>
+        <p>Temperature: ${measurement.value1}</p>
+        <p> Humidity: ${measurement.value2}</p>
+        <p> Heatindex: ${measurement.value3}</p>`;
 }
 
 renderData(); // start immediately
@@ -97,66 +98,4 @@ function preventScroll(e){
     return false;
 }
 
-var KWH = [11, 15, 13, 9, 15, 17, 10 ];
-var week = ['week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7'];
-var cntxt = document.getElementById('js--water_chart');
 
-var myChart = new Chart(cntxt, {
-    type: 'pie',
-    data: {
-        labels: week,
-        datasets: [
-            {
-                label: 'Water verbruik per week in liter',
-                data: KWH,
-                backgroundColor: [
-                    "#85b9cb",
-                    "#6dabc1",
-                    "#559db7",
-                    "#468ba4",
-                    "#418198",
-                    "#316375",
-                    "#224551",
-                ],
-                borderColor: "black",
-                borderWidth: 1,
-                fill: false,
-                lineTension: 0
-
-            }
-        ]
-    },
-
-});
-
-var KWH = [4050, 3800, 4100, 3500, 4578, 4575, 3800];
-var week = ['week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7'];
-var cntxt = document.getElementById('js--gas_chart');
-
-var myChart = new Chart(cntxt, {
-    type: 'pie',
-    data: {
-        labels: week,
-        datasets: [
-            {
-                label: 'elektriciteit verbruik in KWH',
-                data: KWH,
-                backgroundColor: [
-                    "#5893D4",
-                    "#1F3C88",
-                    "#070D59",
-                    "#0B409C",
-                    "#3161A3",
-                    "#10316B",
-                    "#1F3C88",
-                ],
-                borderColor: "black",
-                borderWidth: 1,
-                fill: false,
-                lineTension: 0
-
-            }
-        ]
-    },
-
-});

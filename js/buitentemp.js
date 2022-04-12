@@ -21,11 +21,6 @@ const startLiveWeer = () => {
 const laadWeerbericht = () => {
   let plaats = haalGeselecteerdePlaats();
 
-  console.log(plaats)
-
-  let url = `https://weerlive.nl/api/json-data-10min.php?key=${apiKey}&locatie=${plaats}`;
-
-
   weerIcon.src = 'img/loading.gif';
 
   setTimeout(() => {
@@ -35,7 +30,7 @@ const laadWeerbericht = () => {
     info3.innerHTML = '';
     info4.innerHTML = '';
 
-    laadJSON(url)
+    laadJSON(plaats)
   }, 1500);
 }
 
@@ -47,35 +42,29 @@ const haalGeselecteerdePlaats = () => {
 
 }
 
-const laadJSON = (url) => {
-  const aanvraag = new XMLHttpRequest();
-
-  aanvraag.onreadystatechange = () => {
-    if (aanvraag.readyState === 4 && aanvraag.status === 200) {
-      let jsonText = aanvraag.responseText;
-
-      const weerbericht = JSON.parse(jsonText);
-
-      toonWeerbericht(weerbericht);
+const laadJSON = (plaats) => {
+  fetch("https://weatherapi-com.p.rapidapi.com/current.json?q=" + plaats, {
+    method: "GET",
+    headers: {
+      'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
+      'X-RapidAPI-Key': '5d5a1c73bemsh083096883c74cbep1f9270jsn42a958e48bc4'
     }
-  };
-
-  aanvraag.open("GET", url, true);
-
-  aanvraag.send();
+  })
+    .then((resp) => {
+      resp.json().then(json => {
+        toonWeerbericht(json)
+      })
+    })
 };
 
 const toonWeerbericht = (weerbericht) => {
 
-  let weer = weerbericht.liveweer[0];
-  console.log(weerbericht)
+  weerIcon.src = weerbericht.current.condition.icon;
 
-  weerIcon.src = `img/icons/${weer.image}.png`;
-
-  info1.innerHTML = weer.plaats;
-  info2.innerHTML = weer.samenv;
-  info3.innerHTML = weer.verw;
-  info4.innerHTML = weer.temp + '\u2103';
+  info1.innerHTML = weerbericht.location.name;
+  info2.innerHTML = weerbericht.current.condition.text;
+  // info3.innerHTML = weer.verw;
+  info4.innerHTML = weerbericht.current.temp_c + '\u2103';
 
 }
 

@@ -6,7 +6,7 @@ var stars = [5, 7, 3, 4, 8, 4, 5];
 var frameworks = ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'];
 
 var myChart = new Chart(ctx, {
- type: 'bar',
+ type: 'line',
 
  data: {
     labels: frameworks,

@@ -67,6 +67,7 @@ body.dark{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    z-index: 1;
 }
 .sidebar.close{
     width: 5.5rem;
@@ -389,7 +390,6 @@ body.dark .sidebar li a:hover .text{
 
 
 #dashboard {
-    display              : grid;
     position             : relative;
     display              : grid;
     grid-gap             : 1.875rem;
@@ -410,11 +410,13 @@ body.dark .sidebar li a:hover .text{
 }
 
 .M-weer{
-    padding-bottom: 27rem;
+
 }
 #weather {
-    display: block;
-    position:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 20vw;
         
 }
@@ -434,28 +436,22 @@ select {
     font-size    : 1rem;
 }
 
-@media screen and (max-width: 87.5rem) {
-
-    .card--second{
-        
-    }
-    
-    .card--third{
-       
-    }
-}
+/* 1280px*/
 
 @media screen and (max-width: 80rem) {
     body{
         background: #406882;
     }
 
-    .card--first, .card--second{
-        grid-area: auto;
+    .card--first, .card--second, .card--third, .card--forth, .card--fifth, .card--sixth, .card--seventh, .card--eight {
+        grid-column: 1 / 19;
+        grid-row: auto;
+    
+    }
+    
+    #weather{
+        width: 30rem;
     }
 
-    .card--third {
-        
-        
-    }
+
 }
