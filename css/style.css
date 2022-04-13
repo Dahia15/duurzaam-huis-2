@@ -400,11 +400,11 @@ body.dark .sidebar li a:hover .text{
 
 }
 .item {
-    background   : #ffffff;
+    
     padding      : 1.25rem;
     min-height   : 18.75rem;
     border-radius: 0.625rem;
-    border       : 0.0625rem solid #4c8aff;
+    
     width        : 175%;
 }
 
