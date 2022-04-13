@@ -7,6 +7,12 @@ request.onload = function(){
     datum = new Date(milliSecondsSindsEpoch);
     document.getElementById('location1').innerHTML = obj.name;
     document.getElementById('sunrise1').innerHTML = datum.toLocaleTimeString('nl-NL', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' } )
+
+
+    let milliSecondsSindsEpoch2 = obj.sys.sunset * 1000;
+    datum = new Date(milliSecondsSindsEpoch2);
+    document.getElementById('sunset1').innerHTML = datum.toLocaleTimeString('nl-NL', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' } )
+
     console.log(obj)
 }
 
@@ -25,3 +31,6 @@ fetch(URL)
         datum = new Date(milliSecondsSindsEpoch);
         console.log(datum.toLocaleString());
     });
+
+
+    
